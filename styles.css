@@ -1,0 +1,123 @@
+table { /* selector */
+    text-align: center; /* property: value; */
+    line-height: 200%;
+    width: 300px;
+    height: 200px;
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+
+body {  
+    font-family: 'REM', sans-serif;
+    font-size: 18px;
+    background-color: rgb(231, 212, 255);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color:blueviolet;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    color:rgb(255, 0, 183);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    color: rgb(71, 60, 84);
+}
+
+.sup_element {
+    color: rgb(255, 0, 72);
+}
+
+footer p {
+    color:rgb(255, 0, 225);
+}
+mark {
+    border-radius: 5px;
+}
+
+div#main-content {
+    border: 1px solid rgb(201, 191, 194); 
+    background-color: rgb(222, 198, 236);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-around;
+}
+
+div#main-content:hover {
+    border: 1px solid rgb(229, 105, 140); 
+    background-color: rgb(229, 203, 244);
+}
+
+.main-article {
+    border: 2px solid rgb(213, 119, 150); 
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.main-article:hover {
+    background-color: rgb(245, 227, 255);
+    border: 2px solid rgb(231, 120, 157); 
+}
+
+a:hover {
+    color:rgb(255, 0, 183);
+}
+
+
+#articles {
+    flex-grow: 1;
+}
+
+#ranking {
+    border: 2px solid rgb(213, 119, 150); 
+    border-radius: 10px;
+    padding: 10px;
+    align-self: start;
+}
+
+#ranking:hover {
+    background-color: rgb(245, 227, 255);
+    border: 2px solid rgb(231, 120, 157); 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        position: fixed;
+    }
+    .main-article {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div#main-content, header {
+        flex-direction: column;
+    }
+}
